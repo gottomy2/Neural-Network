@@ -101,8 +101,8 @@ public class Main {
                 "{";
         System.out.println();
         for(int i = 0; i < connections.size();i++){
-            finalGraph += '"' + "N" + connections.get(0).substring(connections.get(0).indexOf("->") -2 , connections.get(0).indexOf("->")) + '"' + " ->" + '"' + "N" +
-                    connections.get(0).substring(connections.get(0).indexOf("->")+3) + '"' + "\n";
+            finalGraph += '"' + "N" + connections.get(i).substring(connections.get(i).indexOf("->") -2 , connections.get(i).indexOf("->")) + '"' + " ->" + '"' + "N" +
+                    connections.get(i).substring(connections.get(i).indexOf("->")+3) + '"' + "\n";
         }
         finalGraph += "}";
         System.out.println(finalGraph);
